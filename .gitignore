@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# Testing artifacts
+test-results/
+playwright-report/
+blob-report/
+
+# Claude Code tooling
+.claude/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
