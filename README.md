@@ -5,7 +5,7 @@ and Framer Motion.
 
 > **Sections and routes are a starter menu, not a required scaffold.** Keep only what the design calls for and
 > delete the rest. The conventions — token system, primitives, motion patterns, typed content layer — are
-> prescriptive. The pages and sections are not. See [Customization](docs/customization.md).
+> prescriptive. The pages, UI and sections are not. See [Customization](docs/customization.md).
 
 ## Quick Start
 

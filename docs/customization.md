@@ -2,6 +2,10 @@
 
 Step-by-step guide for turning this template into a specific project. Work top to bottom.
 
+# DISCLAIMER
+
+All information here are guidelines, but not restrictive rules. Priority should all be high fidelity to the intended design. The structural logic should remain consistent, but the goal is always to just adapt what is usable to the intended design for maximum fidelity.
+
 ## 1. Tokens — one block, one file
 
 Open `src/app/globals.css`. Edit the `:root` block. Every visual decision flows from here.
