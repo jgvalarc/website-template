@@ -33,8 +33,8 @@ export default function ContactPage() {
 
       <section className="pb-section pt-12">
         <Container>
-          <div className="border-line grid grid-cols-1 border min-[1000px]:grid-cols-[1fr_1.2fr]">
-            <div className="border-line border-b min-[1000px]:border-r min-[1000px]:border-b-0">
+          <div className="border-line grid grid-cols-1 border lg:grid-cols-[1fr_1.2fr]">
+            <div className="border-line border-b lg:border-r lg:border-b-0">
               <ContactSidebar />
             </div>
             <div>

@@ -38,6 +38,8 @@ what the design calls for and delete the rest. The conventions below are what's 
 - `src/app/globals.css` is the only executable global stylesheet. All design tokens live in its `:root` block.
 - Prefer semantic Tailwind token utilities (`bg-surface`, `text-accent`, `text-copy`, `border-line`) over raw
   values or inline styles.
+- Author styles mobile-first: base utilities target the smallest screen and layer up with min-width responsive
+  prefixes (`sm:`/`md:`/`lg:`). Do not introduce `max-*` variants or `max-width` media queries.
 - Run `npm run check` before handoff. Add `npm run test:e2e`, `npm run lint:unused`, or `npm run analyze` when the
   change touches browser behaviour, cleanup, dependencies, or performance.
 - Follow Conventional Commits and avoid committing generated artifacts.

@@ -39,6 +39,21 @@ Prefer semantic utilities over raw values:
 If a colour, spacing value, or repeated visual pattern appears more than once, promote it to a token, shared
 class, or component prop.
 
+## Mobile-First Responsivity
+
+Author every layout mobile-first: base styles target the smallest screen, and larger screens
+layer on enhancements.
+
+- In components, write the base (unprefixed) utility for mobile, then widen with Tailwind's
+  min-width prefixes (`sm:`, `md:`, `lg:`, `xl:`). For example: `grid-cols-1 md:grid-cols-2`.
+- Do **not** use `max-*` variants or `@media (max-width: …)` to walk a desktop layout back down.
+  In `globals.css`, scale **up** with `@media (min-width: …)`.
+- Section padding is the canonical example. The `--section-py` token is `--space-8` on mobile and
+  scales to `--space-9` at `≥760px`. Both the `.section-py` class and the `py-section` Tailwind
+  utility resolve to it, so every section breathes less on small screens automatically.
+- Prefer fluid type and spacing (`clamp(...)`) over breakpoint-specific font sizes where practical.
+- Validate new layouts at a 360px width first, then widen.
+
 ## Surface Context Classes
 
 Sections switch between two surfaces using utility classes:

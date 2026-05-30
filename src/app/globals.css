@@ -46,7 +46,8 @@
   --space-8: 64px;
   --space-9: 96px;
   --space-10: 144px;
-  --section-py: var(--space-9);
+  /* Mobile-first: base targets small screens, scaled up at ≥760px (see media query below). */
+  --section-py: var(--space-8);
 
   /* ---- Shape ---- */
   --radius-sm: 4px;
@@ -85,7 +86,7 @@
   --font-display: var(--font-display);
   --font-body: var(--font-body);
   --font-mono: var(--font-mono);
-  --spacing-section: var(--space-9);
+  --spacing-section: var(--section-py);
   --spacing-section-tight: var(--space-8);
 }
 
@@ -377,8 +378,8 @@
   /* FAQ */
   .faq__wrap {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
-    gap: var(--space-8);
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
     align-items: start;
   }
 
@@ -509,18 +510,14 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (min-width: 760px) {
   :root {
-    --section-py: var(--space-8);
+    --section-py: var(--space-9);
   }
 
   .faq__wrap {
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
-  }
-
-  .faq__head {
-    position: static;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+    gap: var(--space-8);
   }
 }
 
